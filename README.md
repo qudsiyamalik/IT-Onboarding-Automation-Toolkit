@@ -84,3 +84,33 @@ Do not commit passwords, application keys, access tokens or other secrets. Keep 
 ## Implementation Status
 
 The Snipe-IT asset register and Python checklist scripts have been tested in the development environment. Ansible, Microsoft Graph integration and MkDocs must be marked as complete only after their corresponding tests have been executed successfully.
+
+## Automated Testing
+
+This project includes automated unit tests for the Python onboarding and offboarding workflows.
+
+### Run All Tests
+
+From the project root directory, run:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py" -v
+```
+
+### Verified Test Results
+
+- Onboarding test: PASSED
+- Offboarding test: PASSED
+- Total tests: 2
+- Failed tests: 0
+
+Both tests verify employee information, workflow status, and pending tasks.
+
+### Additional Validation
+
+- Ansible provisioning playbook: Executed successfully.
+- PowerShell licence reporting: Tested successfully.
+- MkDocs documentation: Built and served successfully.
+- GitHub repository: Initial commit uploaded successfully.
+
+Note: The Python workflows use demonstration employee data. Live production automation requires additional configuration and authorization.
