@@ -1,0 +1,26 @@
+---
+- name: IT Onboarding Provisioning Demo
+  hosts: localhost
+  connection: local
+  gather_facts: true
+
+  tasks:
+    - name: Display provisioning start message
+      ansible.builtin.debug:
+        msg: "IT onboarding provisioning started."
+
+    - name: Create onboarding directory
+      ansible.builtin.file:
+        path: /tmp/it-onboarding-demo
+        state: directory
+        mode: "0755"
+
+    - name: Create provisioning status file
+      ansible.builtin.copy:
+        dest: /tmp/it-onboarding-demo/status.txt
+        content: "Provisioning demonstration completed.\n"
+        mode: "0644"
+
+    - name: Display provisioning completion message
+      ansible.builtin.debug:
+        msg: "Provisioning demonstration completed successfully."

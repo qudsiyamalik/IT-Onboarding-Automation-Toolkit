@@ -1,0 +1,17 @@
+site_name: IT Onboarding Automation Toolkit
+site_description: IT asset management and onboarding automation documentation
+
+theme:
+  name: readthedocs
+
+nav:
+  - Home: index.md
+  - Employee Onboarding: onboarding.md
+  - Employee Offboarding: offboarding.md
+  - Asset Management: asset-management.md
+  - Licence Management: licence-management.md
+  - Troubleshooting: troubleshooting.md
+  - Testing: testing.md
+docs_dir: .
+
+site_dir: ../site

@@ -1,0 +1,39 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Python virtual environment and cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated Python records
+python/onboarding_record.json
+python/offboarding_record.json
+
+# Generated PowerShell reports
+powershell/licence_report.csv
+
+# MkDocs generated website
+site/
+
+# Local editor and system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Docker environment
+docker/.env
+
+# Local software installers
+*.exe
+
+# Database backups
+*.sql
+*.sql.gz
